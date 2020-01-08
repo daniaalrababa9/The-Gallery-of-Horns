@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Gallery of Horns</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/layout.css" />
+    <link rel="stylesheet" href="./css/modules.css" />
+  </head>
+  <body>
+    <header>
+      <h1><a href="./index.html">The Gallery of Horns</a></h1>
+      <nav>
+        <ul>
+          <li><a href="#">Page 1</a></li>
+          <li><a href="#">Page 2</a></li>
+        </ul>
+      </nav>
+      <select>
+        <option value="default">Filter by Keyword</option>
+      </select>
+      <form id="sort-by">
+        <input type="radio" name="sort" value="title"> title
+        <input type="radio" name="sort" value="horns"> horns
+      </form>
+    </header>
+    <script id="image-template" type="text/x-handlebars-template">
+      <h2>{{title}}</h2>
+      <img src={{image_url}} alt={{alt-tag}}>
+      <p>{{description}}</p>
+    </script>
+    <main>
+      <section class="placeholder"></section>
+    </main>
+    <footer>
+      &copy; 2018 Code Fellows
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous">
+    </script>
+    <script src="handlebars-v4.1.2.js"></script>
+    <script src="app3.js"></script>
+  </body>
+</html>

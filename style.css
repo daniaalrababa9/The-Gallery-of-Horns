@@ -1,0 +1,12 @@
+div{
+    float: left;
+    height: 250px;
+    margin: 3em;
+  width: 250px;  
+}
+img{
+    max-width:100%; ;
+}
+main{
+    overflow: hidden;
+}
